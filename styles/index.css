@@ -33,8 +33,8 @@ main {
   margin: 2vw;
   display: flex; 
   justify-content: center;
-  align-items: top;
-  position: relative;
+  align-items: top;         /*이미지 세로정렬 */
+  position: relative;      /*그림이 포개지게 -> textWrap */
 }
  
 #imgView, .txtWrap {
@@ -45,7 +45,7 @@ main {
   border: 1px solid #626567;
 } 
 .txtWrap {
-  position: absolute;
+  position: absolute;     /*그림이 포개진다 */
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -81,11 +81,11 @@ main {
   display: inline-block;
   border : 2px solid #f0f0f0;
   margin: 2px;
-  opacity: 10%;
+  opacity: 10%; /*마우스 없으면 10% 이다가 */
 }
 
 #imgIcon > img:hover, #imgIcon > img:active {
-  opacity: 100%;
+  opacity: 100%; /*마우스가 올라가면 opacity 100% */
 }
 
 
