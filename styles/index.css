@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width : 100%;
+  height: 10vh;
+  background-color: black;
+  color : white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width : 100%;
+  height: 90vh;
+  color : #626567;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgS {
+  width : 80vW ;
+  height : 40vW; 
+  margin: 2vw;
+  display: flex; 
+  justify-content: center;
+  align-items: top;
+  position: relative;
+}
+ 
+#imgView, .txtWrap {
+  width : 100% ;
+  height: 100% ; 
+  max-width: 150px;
+  max-height: 150px;
+  border: 1px solid #626567;
+} 
+.txtWrap {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  display : none ;
+}
+#imgViewText {
+  width : 50% ;
+  height: auto ;
+  font-size: 1.2rem;
+  background-color: black;
+  color:white;
+  opacity: 50%;
+  text-align: center;
+}
+#imgView > img {
+  width : 100% ;
+  height: 100% ; 
+}
+
+#imgIcon {
+  width : 100% ;
+  height: 25% ; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  padding: 5vw;
+} 
+
+#imgIcon > img {
+  width : 50px ;
+  height: 50px ;
+  display: inline-block;
+  border : 2px solid #f0f0f0;
+  margin: 2px;
+  opacity: 10%;
+}
+
+#imgIcon > img:hover, #imgIcon > img:active {
+  opacity: 100%;
+}
+
+
